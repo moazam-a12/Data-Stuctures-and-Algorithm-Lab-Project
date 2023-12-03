@@ -16,6 +16,7 @@ All these shops have their individual working and they give fair options to expl
 THE INTRODUCTION TO SHOPS
 
 1.	Grocery Shop
+
 There are many different types of foods and vegetables available to select from, the groceries selected are placed in a cart, then the customer proceeds to check out at the cash register.
 Concepts Implemented are listed as:
 −	Linked List (for the receipt of groceries purchased)
@@ -23,12 +24,14 @@ Concepts Implemented are listed as:
 −	Stack (for groceries in the cart)
 
 2.	Arcade
+
 Arcade is exclusive to only one game, the Snake one. But there are different displays/game slots available.
 Concepts Implemented are listed as:
 −	Linked Lists
 −	Queue and Trees
 
 3.	Food Court
+
 Gives the customer options to select different type of Fast Foods. The items available are:
 Burgers (Zinger, Patty, Fillet)
 Shawarma (Zinger, Chicken)
@@ -39,6 +42,7 @@ Concepts Implemented are listed as:
 −	Queue (for customer line)
 
 4.	Library
+
 This is a library but purchasing is also available for the books. There are different types of books regarding categories. 
 Educational Books 
 Entertainment Books
@@ -49,6 +53,7 @@ Concepts Implemented are listed as:
 −	Doubly Linked List (for books)
 
 5.	Cinema
+
 There are different movies to choose from, but only the purchase of tickets is available. We’re opting for:
 Displaying List of Movies
 Different types of tickets
