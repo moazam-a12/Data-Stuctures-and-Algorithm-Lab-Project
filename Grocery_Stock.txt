@@ -1,0 +1,44 @@
+Product 1
+Name (Nike Shoes Size 13)
+Price (1399)
+Quantity (5)
+
+Product 2 (sale)
+Name (Charging Cables for iPhone)
+Price (599)
+Quantity (20)
+
+Product 3
+Name (Oribits Large Pack of Gums)
+Price (746)
+Quantity (34)
+
+Product 4
+Name (Wooden Chairs)
+Price (2499)
+Quantity (20)
+
+Product 5
+Name (Leather Wallets for Men)
+Price (1999)
+Quantity (23)
+
+Product 6
+Name (Coloring Books for Kids)
+Price (1699)
+Quantity (19)
+
+Product 7 (sale)
+Name (Custom Bag of Toiletries)
+Price (7999)
+Quantity (13)
+
+Product 8
+Name (Custom Cases for Phones)
+Price (1499)
+Quantity (13)
+
+Product 9
+Name (Song Albums)
+Price (2499)
+Quantity (45)

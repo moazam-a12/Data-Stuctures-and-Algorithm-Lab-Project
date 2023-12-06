@@ -1,10 +1,9 @@
 #include <iostream>
-#include "Store.h"
+#include "Management.h"
 using namespace std;
 
 int main()
 {
-    store Moze;
-    Moze.welcome();
+    welcomeStore();
     return 0;
 }

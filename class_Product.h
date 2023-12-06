@@ -14,11 +14,11 @@ private:
 public:
     Product();
     Product(string name, int price, int quantity);
-    friend ostream &operator<<(ostream &os, Product *&head);
     Product *insertAtHead(Product *&head, string name, int price, int quantity);
     void insertAtTail(Product *&head, string name, int price, int quantity);
     bool proSearch(string proName, Product *&head);
     void deleteAtIndex(Product *head, int index);
+    friend ostream &operator<<(ostream &os, Product *&head);
     ~Product();
 };
 
