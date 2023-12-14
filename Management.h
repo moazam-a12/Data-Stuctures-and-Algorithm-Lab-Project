@@ -19,6 +19,9 @@ void welcomeStore()
     if (check)
     {
         Moze.shops();
+        system("CLS");
+        cout << "******* Thank you for coming, See you next time? ;) *******" << endl;
+        return;
     }
     else if (!check)
     {

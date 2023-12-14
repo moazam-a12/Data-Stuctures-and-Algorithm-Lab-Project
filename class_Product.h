@@ -14,9 +14,14 @@ private:
 public:
     Product();
     Product(string name, int price, int quantity);
+    string getName();
+    int getPrice();
+    int getQuantity();
     Product *insertAtHead(Product *&head, string name, int price, int quantity);
     void insertAtTail(Product *&head, string name, int price, int quantity);
+    void insertAtTail(Product *&head, Product* data);
     bool proSearch(string proName, Product *&head);
+    Product *proDeets(int proNum, Product *&head);
     void deleteAtIndex(Product *head, int index);
     friend ostream &operator<<(ostream &os, Product *&head);
     ~Product();
@@ -40,6 +45,22 @@ Product::Product(string name, int price, int quantity)
     this->quantity = quantity;
     this->next = NULL;
 }
+
+string Product::getName()
+{
+    return this->name;
+}
+
+int Product::getPrice()
+{
+    return this->price;
+}
+
+int Product::getQuantity()
+{
+    return this->quantity;
+}
+
 Product *Product::insertAtHead(Product *&head, string name, int price, int quantity)
 {
     Product *newPro = new Product(name, price, quantity);
@@ -59,6 +80,22 @@ Product *Product::insertAtHead(Product *&head, string name, int price, int quant
 void Product::insertAtTail(Product *&head, string name, int price, int quantity)
 {
     Product *newPro = new Product(name, price, quantity);
+    if (head == NULL)
+    {
+        head = newPro;
+        return;
+    }
+    Product *temp = head;
+    while (temp->next != NULL)
+    {
+        temp = temp->next;
+    }
+    temp->next = newPro;
+}
+
+void Product::insertAtTail(Product *&head, Product* data)
+{
+    Product *newPro = new Product(data->getName(),data->getPrice(),data->getQuantity());
     if (head == NULL)
     {
         head = newPro;
@@ -93,6 +130,15 @@ bool Product::proSearch(string proName, Product *&head)
     }
 }
 
+Product *Product::proDeets(int proNum, Product *&head)
+{
+    Product *current = head;
+    for (int i = 0; i < proNum; i++)
+    {
+        current = current->next;
+    }
+    return current;
+}
 void Product::deleteAtIndex(Product *head, int index)
 {
 
@@ -144,7 +190,7 @@ ostream &operator<<(ostream &os, Product *&head)
             temp = temp->next;
             temp->count++;
         }
-        cout << "\n\nYour total is: Rs." << temp->totalPrice << endl;
+        // cout << "\n\nYour total is: Rs." << temp->totalPrice << endl;
         os << "\n\n\n************End of the List*************" << endl;
     }
 }
