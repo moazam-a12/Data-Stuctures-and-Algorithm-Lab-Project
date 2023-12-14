@@ -7,6 +7,7 @@ using namespace std;
 
 class grocery
 {
+private:
     Product *stock;
     stack<Product *> Cart;
     Product *receipt;
@@ -27,13 +28,15 @@ void grocery::enter()
 {
     int choice;
     system("CLS");
-    cout << "\n****Welcome to the Grocery Shop****\n"
+    cout << "\n\n ************************** Welcome to the Grocery Shop **************************\n"
          << endl;
-    cout << "Explore the Options:\n"
-         << "\n1.\tSurf for Products"
-         << "\n2.\tCheck out"
-         << "\n3.\tMain Menu" << endl;
-    cout << "\nEnter your answer: ";
+    cout << "\n\n ++ Explore the Options:\n"
+         << "\n\n ++ 1. \tSURF FOR PRODUCTS"
+         << "\n\n ++ 2. \tCHECK OUT"
+         << "\n\n ++ 3. \tGO BACK TO STORE" << endl;
+    cout << "\n\n **************************\n"
+         << endl;
+    cout << "\n\n ++ Enter your choice-> ";
     cin >> choice;
     system("CLS");
     switch (choice)
@@ -62,18 +65,30 @@ void grocery::surfProducts()
     bool choice = true;
     int proNum;
     system("CLS");
-    cout << "The Products available in the store are as: " << endl;
+    cout << "\n\n ************************** Welcome to the Grocery Shop **************************\n"
+         << endl;
+    cout << "\n\n ++ The Products available in the store are as: " << endl;
     cout << stock << endl;
+    cout << "\n\n **************************\n"
+         << endl;
 
-    cout << "Anything that sparked your interest?" << endl;
-    cout << "\nAdd it to your cart by giving the number of the product: " << endl;
+    cout << "\n\n ++ Anything that sparked your interest?" << endl;
+    cout << "\n\n ++ Add it to your cart by giving the number of the product below!" << endl;
+    cout << "\n\n **************************\n"
+         << endl;
+    cout << "\n\n ++ Enter your choice-> ";
     cin >> proNum;
     Product *pro = stock->proDeets((proNum - 1), stock);
     Cart.push(pro);
     system("CLS");
-    cout << "Add another product to the cart or go back to the main menu?" << endl;
-    cout << "\n1.\tAdd another Product"
-         << "\n2.\tMain" << endl;
+    cout << "\n\n ************************** Welcome to the Grocery Shop **************************\n"
+         << endl;
+    cout << "\n\n ++ Add another product to the cart or go back to the main menu?" << endl;
+    cout << "\n\n ++ 1. \tADD ANOTHER PRODUCT"
+         << "\n\n ++ 2. \tMAIN MENU" << endl;
+    cout << "\n\n **************************\n"
+         << endl;
+    cout << "\n\n ++ Enter your choice-> ";
     int decision;
     cin >> decision;
     switch (decision)
@@ -124,24 +139,56 @@ void grocery::getStockFromFile()
 }
 void grocery::checkOut()
 {
-    while (!this->Cart.empty())
-    {
-        this->receipt->insertAtTail(this->receipt, this->Cart.top());
-        this->Cart.pop();
-    }
     system("CLS");
-    cout << "*************Check Out***************\n\n\n"
+    cout << "\n\n ************************** Welcome to the Grocery Shop **************************\n"
          << endl;
-    cout << "Your receipt of the Products bought is as: \n"
-         << endl;
-    cout << this->receipt << endl;
-    cout << "\n\nPress \'1\' to check out" << endl;
-    int choice;
-    cin >> choice;
-    while (choice != 1)
+    if (Cart.empty())
     {
-        cout << "Please Press \'1\': ";
+        cout << "\n\n ++ Cart is Empty!" << endl;
+        cout << "\n\n **************************\n"
+             << endl;
+        cout << "\n\n ++ Add another product to the cart or go back to the main menu?" << endl;
+        cout << "\n\n ++ 1. \tADD ANOTHER PRODUCT"
+             << "\n\n ++ 2. \tMAIN MENU" << endl;
+        cout << "\n\n **************************\n"
+             << endl;
+        cout << "\n\n ++ Enter your choice-> ";
+        int decision;
+        cin >> decision;
+        switch (decision)
+        {
+        case 1:
+            surfProducts();
+            break;
+        case 2:
+            enter();
+            break;
+        default:
+            break;
+        }
+    }
+    else
+    {
+        while (!this->Cart.empty())
+        {
+            this->receipt->insertAtTail(this->receipt, this->Cart.top());
+            this->Cart.pop();
+        }
+        cout << "\n\n ++ CHECK OUT" << endl;
+        cout << "\n\n ++ Your receipt of the Products bought is as: \n"
+             << endl;
+        cout << this->receipt << endl;
+        cout << "\n\n ++ Press \'1\' to check out" << endl;
+        cout << "\n\n **************************\n"
+             << endl;
+        cout << "\n\n ++ Enter your choice-> ";
+        int choice;
         cin >> choice;
+        while (choice != 1)
+        {
+            cout << "Please Press \'1\': ";
+            cin >> choice;
+        }
     }
     return;
 }

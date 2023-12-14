@@ -176,6 +176,7 @@ ostream &operator<<(ostream &os, Product *&head)
     {
         Product *temp = head;
         temp->count = 0;
+        temp->totalPrice = 0;
         while (temp != NULL)
         {
             os << "\n"
@@ -190,8 +191,8 @@ ostream &operator<<(ostream &os, Product *&head)
             temp = temp->next;
             temp->count++;
         }
-        // cout << "\n\nYour total is: Rs." << temp->totalPrice << endl;
-        os << "\n\n\n************End of the List*************" << endl;
+        cout << "\n\n ++ Your total is: Rs." << temp->totalPrice << endl;
+        // os << "\n\n\n************End of the List*************" << endl;
     }
 }
 
