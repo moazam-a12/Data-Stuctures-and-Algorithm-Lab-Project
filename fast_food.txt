@@ -1,0 +1,15 @@
+item 1
+Name (Loaded Fries)
+Price (13)
+
+item 2
+Name (Patty Burger)
+Price (12)
+
+item 3
+Name (Zinger Burger)
+Price (18)
+
+item 4
+Name (Shawarma)
+Price (19)

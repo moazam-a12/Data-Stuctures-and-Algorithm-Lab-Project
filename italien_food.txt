@@ -1,0 +1,23 @@
+item 1
+Name (Cheese Wheel Pasta)
+Price (139)
+
+item 2
+Name (Lasagne)
+Price (37)
+
+item 3
+Name (Gelato)
+Price (22)
+
+item 4
+Name (Tortelli and Ravioli)
+Price (59)
+
+item 5
+Name (Sardine in Saor)
+Price (67)
+
+item 6
+Name (Traditional Italien Pizza)
+Price (29)

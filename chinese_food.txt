@@ -1,0 +1,23 @@
+item 1
+Name (Kung Pao Chicken)
+Price (36)
+
+item 2
+Name (Dim Sum)
+Price (49)
+
+item 3
+Name (Fried Rice)
+Price (25)
+
+item 4
+Name (Dumplings)
+Price (38)
+
+item 5
+Name (Ma Po Tofu)
+Price (59)
+
+item 6
+Name (Wonton Soup)
+Price (36)

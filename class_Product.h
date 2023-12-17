@@ -183,7 +183,7 @@ ostream &operator<<(ostream &os, Product *&head)
                << (temp->count + 1) << ". ";
             os << "\tItem Name: "
                << temp->name << endl;
-            os << "\tPrice: Rs."
+            os << "\tPrice: $"
                << temp->price << endl;
             temp->totalPrice += (temp->price * temp->quantity);
             os << "\tQuantity: "
@@ -191,7 +191,7 @@ ostream &operator<<(ostream &os, Product *&head)
             temp = temp->next;
             temp->count++;
         }
-        cout << "\n\n ++ Your total is: Rs." << temp->totalPrice << endl;
+        cout << "\n\n ++ Your total is: $" << temp->totalPrice << endl;
         // os << "\n\n\n************End of the List*************" << endl;
     }
 }

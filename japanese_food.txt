@@ -1,0 +1,27 @@
+item 1
+Name (Yakitori)
+Price (56)
+
+item 2
+Name (Sushi)
+Price (49)
+
+item 3
+Name (Ramen)
+Price (18)
+
+item 4
+Name (Donburi)
+Price (29)
+
+item 5
+Name (Tonkatsu)
+Price (39)
+
+item 6
+Name (Miso Soup)
+Price (18)
+
+item 7
+Name (Nikujaga)
+Price (23)

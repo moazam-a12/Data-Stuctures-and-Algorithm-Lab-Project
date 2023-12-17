@@ -183,7 +183,7 @@ ostream &operator<<(ostream &os, movie *&head)
                << (temp->count + 1) << ". ";
             os << "\n\n ++ \tMovie Name: "
                << temp->name;
-            os << "\n ++ \tPrice: Rs."
+            os << "\n ++ \tPrice: $"
                << temp->price;
             temp->totalPrice += (temp->price);
             os << "\n ++ \tDuration: "

@@ -1,0 +1,23 @@
+item 1
+Name (Butter Chicken and Naan)
+Price (47)
+
+item 2
+Name (Palak Paneer)
+Price (36)
+
+item 3
+Name (Biryani)
+Price (16)
+
+item 4
+Name (Masala Dosa)
+Price (39)
+
+item 5
+Name (Tandoori Chicken)
+Price (50)
+
+item 6
+Name (Chicken Tikka Masala)
+Price (48)
