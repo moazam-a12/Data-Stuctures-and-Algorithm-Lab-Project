@@ -55,9 +55,9 @@ void store::shops()
         case 4:
             shop4.enter();
             break;
-        // case 5:
-        //     shop5.enter();
-        //     break;
+        case 5:
+            shop5.enter();
+            break;
         case 6:
             return;
 

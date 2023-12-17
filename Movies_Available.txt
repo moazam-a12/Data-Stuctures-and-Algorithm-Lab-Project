@@ -1,0 +1,24 @@
+Movie 1
+Name (SpiderMan Into the SpiderVerse)
+Price (1399)
+Duration (195)
+
+Movie 2
+Name (Swayed With the Wind)
+Price (699)
+Duration (130)
+
+Movie 3
+Name (Empathy is My Middle Name)
+Price (899)
+Duration (85)
+
+Movie 4
+Name (Fast & Furious 9)
+Price (1599)
+Duration (195)
+
+Movie 5
+Name (Khabhi Khusi Kabhi Gam)
+Price (1099)
+Duration (165)

@@ -30,7 +30,13 @@ void welcomeStore()
     }
     else if (!check)
     {
-        cout << "Would you like to exit the store instead?" << endl;
+        cout << "\n ************************** Welcome to the Store **************************\n"
+             << endl;
+        cout << "\n\n ++ Would you like to exit the store instead?" << endl;
+        cout << "\n\n ++ Enter \'1\' for \'Yes\' and \'0\' for \'No\'" << endl;
+        cout << "\n\n **************************\n"
+             << endl;
+        cout << "\n\n ++ Enter your choice-> ";
         cin >> check;
         if (!check)
         {
